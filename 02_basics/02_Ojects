@@ -35,3 +35,4 @@ Object.freeze(myObj)
 // npw if I change my value ofObject then it will never be changed
 myObj.Email = "somaasif@gmail.com";
 console.log(myObj["Email"]);//here the result in terminal will be the hadi's Email because the object has been freezed 
+console.log(myObj);
