@@ -1,0 +1,37 @@
+//2 tyoes if objects 
+//1 Literal Object , 2 Constructor Object
+
+//there is concept aboit Singleton (jab bhi hum
+// literal object banate hen tow Singleton nh 
+//banta hai ) ,
+
+//here declaring symbol
+let mysyb = Symbol()
+
+// ****************declaring Objaect 
+
+let myObj = {
+    name : "ali",
+    age : 24,
+    city :"karachi",
+    Email:"asad37827@gmail.com",
+    MyArr:[1,7,9,4,0,2],
+    [mysyb] : "its my symbol",
+
+
+}
+//accecing the Object 
+console.log(myObj.city);//this is not the right syntax to access obj 
+console.log(myObj["city"]);//this is thi right suntax to follow 
+console.log(typeof myObj["MyArr"]);
+console.log(typeof myObj[mysyb]);//accessing the symbol over here 
+// over writtig in any value of Object 
+
+myObj.Email = "hadiali@google.com";
+console.log(myObj["Email"]);
+/* if you wanna freeze your obj and 
+never wanted to be change u can make it freeze */
+Object.freeze(myObj)
+// npw if I change my value ofObject then it will never be changed
+myObj.Email = "somaasif@gmail.com";
+console.log(myObj["Email"]);//here the result in terminal will be the hadi's Email because the object has been freezed 
