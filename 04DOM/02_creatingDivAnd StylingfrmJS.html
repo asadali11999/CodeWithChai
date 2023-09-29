@@ -4,40 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+    
 </head>
 <body style="background-color: black; color: aliceblue;" >
     <button onclick="appending()" style="padding: 20px; background-color: grey;">click me </button>
     <button onclick="randomValu()" style="padding: 20px; background-color: greenyellow;">click me for a random value </button>
-
+    <button onclick="abc()" style="background-color: aqua;padding: 20px;" > click me to add a language</button>
+    <ul class="alias">
+        <li>java</li>
+    </ul>
+    
 </body>
-<script>
-
-function appending() {const dev = document.createElement('div')
-console.log(dev);
-dev.className = "main";
-dev.id = Math.random((Math.random * 10 )+1)
-dev.setAttribute("title" , "generate title")
-dev.style.backgroundColor = "red"
-dev.style.padding = "15px"
-dev.style.color = "white"
-// dev.innerText = "chai aur code"
-const insText = document.createTextNode("chai aur code")
-dev.appendChild(insText)
-document.body.append(dev)
-} 
- function randomValu() {const set =document.createElement("div")
- console.log(set);
- set.style.backgroundColor = "green"
- set.style.Color = "blue"
- set.padding = "20px"
- const get = document.createTextNode(Math.floor(Math.random() * 10 +1))
- set.appendChild(get)
- document.body.append(set)
-}
- 
-
-
-
-
+<script src="DOMManupulation.js">
 </script>
 </html>
